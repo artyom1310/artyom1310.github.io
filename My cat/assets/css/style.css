@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: 'Langar', cursive;
+    
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*container*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*intro*/
+.intro{
+    width: 100%;
+    height: 100vh;
+    
+    background: 
+    url("../images/intro.jpg")
+    center no-repeat;
+    -webkit-background-size:
+    cover;
+    background-size: cover;
+}
+
+/*header*/
+.header {
+    width: 100%;
+    padding-top: 20px;
+    
+position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+z-index: 1000%;
+    
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    
+color: #fff;
+text-decoration: none;
+    
+transform: color .1s linear;
+}
+
+.nav__link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: #fce38a;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity .1s liner;
+}
+
+.nav__link:hover{
+    color: #fce38a;
+}
+
+.nav__link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+/*cats*/
+.cats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cats__it{
+    width: 30%;
+}
+
+.cat__it:hover .cat__img img{
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.cat__it:hover .cat__img img{
+    opacity: .3;
+    
+}
+
+.cat__img{
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    
+    transition: transform .2s linear;
+}
+
+.cats__img img{
+    transition: opacity .1s linear;
+    
+}
+.cats__text {
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.barsic_text{
+    text-align: justify;
+}
+
+.simba_text{
+    text-align: justify;
+}
+
+.tim_text{
+    text-align: justify;
+}
+
+.kuz_text{
+    text-align: justify;
+}
+
+.about_text{
+    text-align: justify;
+}
+
+.facts_text{
+    text-align: justify;
+}
+
+.films_text{
+    text-align: justify;
+}
+
+footer {
+display: flex;
+align-items: center;
+position: relative;
+width:70%;
+color:#fff;
+
+padding: 10px;
+background-color: chocolate;
+border-top: 10px solid #fff;
+border-bottom: 10px solid #fff;
+height: 100 px;
+font-size: 32px;
+line-height: 1;
+}
